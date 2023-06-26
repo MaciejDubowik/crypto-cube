@@ -14,6 +14,9 @@
 		0E2F99692A48ED6600CFFE03 /* crypto_cubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99682A48ED6600CFFE03 /* crypto_cubeTests.swift */; };
 		0E2F99732A48ED6600CFFE03 /* crypto_cubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99722A48ED6600CFFE03 /* crypto_cubeUITests.swift */; };
 		0E2F99752A48ED6600CFFE03 /* crypto_cubeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99742A48ED6600CFFE03 /* crypto_cubeUITestsLaunchTests.swift */; };
+		0E2F998A2A497FB200CFFE03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99892A497FB200CFFE03 /* User.swift */; };
+		0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F998B2A49819000CFFE03 /* RegistrationView.swift */; };
+		0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		0E2F996E2A48ED6600CFFE03 /* crypto-cubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crypto-cubeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2F99722A48ED6600CFFE03 /* crypto_cubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_cubeUITests.swift; sourceTree = "<group>"; };
 		0E2F99742A48ED6600CFFE03 /* crypto_cubeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_cubeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E2F99892A497FB200CFFE03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E2F998B2A49819000CFFE03 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,12 @@
 		0E2F99562A48ED6300CFFE03 /* crypto-cube */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F998D2A4982C700CFFE03 /* Components */,
+				0E2F99832A48EFF700CFFE03 /* Screens */,
+				0E2F99822A48EF9E00CFFE03 /* Networking */,
+				0E2F99812A48EF5D00CFFE03 /* Resources */,
 				0E2F99572A48ED6300CFFE03 /* crypto_cubeApp.swift */,
 				0E2F99592A48ED6300CFFE03 /* ContentView.swift */,
-				0E2F995B2A48ED6500CFFE03 /* Assets.xcassets */,
 				0E2F995D2A48ED6500CFFE03 /* Preview Content */,
 			);
 			path = "crypto-cube";
@@ -125,6 +134,70 @@
 				0E2F99742A48ED6600CFFE03 /* crypto_cubeUITestsLaunchTests.swift */,
 			);
 			path = "crypto-cubeUITests";
+			sourceTree = "<group>";
+		};
+		0E2F99812A48EF5D00CFFE03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F995B2A48ED6500CFFE03 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E2F99822A48EF9E00CFFE03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0E2F99832A48EFF700CFFE03 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99842A48F00F00CFFE03 /* Registration */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0E2F99842A48F00F00CFFE03 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99872A497E4A00CFFE03 /* Model */,
+				0E2F99862A497E4600CFFE03 /* View */,
+				0E2F99852A497E0E00CFFE03 /* ViewModel */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		0E2F99852A497E0E00CFFE03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E2F99862A497E4600CFFE03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F998B2A49819000CFFE03 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E2F99872A497E4A00CFFE03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99892A497FB200CFFE03 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E2F998D2A4982C700CFFE03 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +332,9 @@
 			files = (
 				0E2F995A2A48ED6300CFFE03 /* ContentView.swift in Sources */,
 				0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */,
+				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
+				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
+				0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

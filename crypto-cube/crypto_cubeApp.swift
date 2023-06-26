@@ -11,7 +11,7 @@ import SwiftUI
 struct crypto_cubeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RegistrationView()
         }
     }
 }
