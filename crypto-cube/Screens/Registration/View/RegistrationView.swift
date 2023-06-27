@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    let registrationViewModel = RegistrationViewModel()
     @State private var name: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
@@ -33,7 +34,7 @@ struct RegistrationView: View {
                             .font(.system(size: 15))
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 102)
+                    .padding(.leading, 105)
                     .padding(.top, 10)
 
 
@@ -50,6 +51,7 @@ struct RegistrationView: View {
 
                         Button(action: {
                             print("register")
+                            registrationViewModel.registerUser(name: name, email: email, password: password)
                         }, label: {
                             Text("Register")
                                 .foregroundColor(.black)

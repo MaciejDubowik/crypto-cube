@@ -38,6 +38,7 @@ struct DefaultTextField: View {
             .textFieldStyle(DefaultTextFieldStyle())
             .frame(maxWidth: .infinity)
             .padding(.bottom, 12)
+            .textInputAutocapitalization(.never)
     }
 }
 
