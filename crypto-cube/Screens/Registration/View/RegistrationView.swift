@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    let registrationViewModel = RegistrationViewModel()
-    @State private var name: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var confirmPassword: String = ""
+    @ObservedObject var registrationViewModel = RegistrationViewModel()
 
     var body: some View {
         VStack {
-
             ZStack{
                 Image("register-background")
                     .resizable()
@@ -25,35 +20,39 @@ struct RegistrationView: View {
 
                 VStack {
                     VStack{
-                        Text("Register")
+                        Text("Sign Up")
                             .foregroundColor(.white)
                             .font(.system(size: 40))
+                            .frame(maxWidth: .infinity, alignment: .leading)
 
                         Text("Create your account")
                             .foregroundColor(.white)
                             .font(.system(size: 15))
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 105)
                     .padding(.top, 10)
-
 
                     Spacer()
 
                     VStack {
-
                         VStack {
-                            DefaultTextField(placeholder: "Name", text: $name)
-                            DefaultTextField(placeholder: "Email", text: $email)
-                            DefaultTextField(placeholder: "Password", text: $password)
-                            DefaultTextField(placeholder: "Confirm Passowrd", text: $confirmPassword)
-                        }.padding(.bottom, 30)
+                            DefaultTextField(placeholder: "Name", text: $registrationViewModel.user.name)
+                            DefaultTextField(placeholder: "Email", text: $registrationViewModel.user.email)
+                            SecureTextField(placeholder: "Password", text: $registrationViewModel.user.password)
+                            SecureTextField(placeholder: "Confirm Password", text: $registrationViewModel.repeatedPassword)            .textContentType(.password)
+
+                            Text(registrationViewModel.message)
+                                .font(Font.custom("Lato", size: 14))
+                                .foregroundColor(.red)
+                        }
+                        .padding(.bottom, 30)
 
                         Button(action: {
                             print("register")
-                            registrationViewModel.registerUser(name: name, email: email, password: password)
+                            registrationViewModel.validateAndRegister()
                         }, label: {
-                            Text("Register")
+                            Text("Sign Up")
                                 .foregroundColor(.black)
                                 .frame(width: 342, height: 51)
                                 .background(Color(red: 1, green: 0.65, blue: 0))
@@ -63,13 +62,12 @@ struct RegistrationView: View {
 
                         HStack{
                             Text("Have an account?")
-                            .font(Font.custom("Lato", size: 14))
-                            .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
-
+                                .font(Font.custom("Lato", size: 14))
+                                .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
                             Button(action: {
                                 print("go to login")
                             }, label: {
-                                Text("Login")
+                                Text("Sign In")
                                     .font(Font.custom("Lato", size: 14))
                                     .foregroundColor(Color(red: 1, green: 0.65, blue: 0))
 
@@ -77,22 +75,15 @@ struct RegistrationView: View {
                         }
                         .padding(.top,14)
                         .padding(.bottom, 40)
-
                     }
+                    .padding(.horizontal, 0)
                     .padding(.top, 50)
                     .background()
                     .frame(maxWidth: .infinity)
-
                 }
-
-
-
             }
-
-
         }
     }
-
 }
 
 struct RegistrationView_Previews: PreviewProvider {

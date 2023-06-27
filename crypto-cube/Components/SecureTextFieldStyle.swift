@@ -1,14 +1,13 @@
 //
-//  DefaultTextFieldStyle.swift
+//  SecureTextFieldStyle.swift
 //  crypto-cube
 //
-//  Created by Maciej Dubowik on 26/06/2023.
+//  Created by Maciej Dubowik on 27/06/2023.
 //
 
 import SwiftUI
 
-
-struct DefaultTextFieldStyle: TextFieldStyle {
+struct SecureTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<_Label>) -> some View {
         configuration
             .frame(width: 332, height: 51)
@@ -24,7 +23,7 @@ struct DefaultTextFieldStyle: TextFieldStyle {
 }
 
 
-struct DefaultTextField: View {
+struct SecureTextField: View {
     var placeholder: String
     @Binding var text: String
 
@@ -34,19 +33,12 @@ struct DefaultTextField: View {
             .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
             .frame(width: 332, alignment: .leading)
 
-        TextField("", text: $text)
+        SecureField("", text: $text)
             .textFieldStyle(DefaultTextFieldStyle())
             .frame(maxWidth: .infinity)
             .padding(.bottom, 12)
             .textInputAutocapitalization(.never)
             .autocorrectionDisabled()
+            .textContentType(.oneTimeCode)
     }
 }
-
-//struct DefaultTextFieldView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DefaultTextField()
-//    }
-//}
-
-

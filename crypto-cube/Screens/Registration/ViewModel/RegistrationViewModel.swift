@@ -6,27 +6,43 @@
 //
 
 import Firebase
+import Combine
 
-class RegistrationViewModel {
+class RegistrationViewModel: ObservableObject {
+
+    @Published var user = User()
+    @Published var repeatedPassword: String = ""
+    @Published var message: String = ""
     
-    func registerUser(name: String, email: String, password: String){
-        Auth.auth().createUser(withEmail: email, password: password, completion: { result, err in
+    func registerUser(){
+        Auth.auth().createUser(withEmail: user.email, password: user.password, completion: { result, err in
             if let err = err {
-                print("Failed due to error:", err)
+                self.message = err.localizedDescription
                 return
             }
-            print("Successfully created account with ID: \(result?.user.uid ?? "")")
+
+            self.message = ""
+
             let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-            changeRequest?.displayName = name
+            changeRequest?.displayName = self.user.name
             changeRequest?.commitChanges { err in
                 if let err = err {
                     print("Failed due to error:", err)
                     return
                 }
-                print("name: \(name)")
             }
         })
+        print("success")
+    }
 
+    func validateAndRegister(){
+        if user.name.isEmpty {
+            message = "Name is empty."
+        } else if user.password != repeatedPassword {
+            message = "Passwords do not match."
+        } else {
+            registerUser()
+        }
     }
 
 }

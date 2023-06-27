@@ -23,6 +23,7 @@
 		0E2F99982A4A277E00CFFE03 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2F99972A4A277E00CFFE03 /* FirebaseFirestore */; };
 		0E2F999A2A4A277E00CFFE03 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2F99992A4A277E00CFFE03 /* FirebaseStorage */; };
 		0E2F999C2A4AE62D00CFFE03 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F999B2A4AE62D00CFFE03 /* RegistrationViewModel.swift */; };
+		0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextFieldStyle.swift; sourceTree = "<group>"; };
 		0E2F99902A4A256500CFFE03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E2F999B2A4AE62D00CFFE03 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */,
+				0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				0E2F999C2A4AE62D00CFFE03 /* RegistrationViewModel.swift in Sources */,
 				0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */,
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
+				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
 				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
 				0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */,
 			);
