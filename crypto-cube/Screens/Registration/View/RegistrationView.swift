@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @ObservedObject var registrationViewModel = RegistrationViewModel()
-
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack {
             ZStack{
@@ -65,24 +65,23 @@ struct RegistrationView: View {
                                 .font(Font.custom("Lato", size: 14))
                                 .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
                             Button(action: {
-                                print("go to login")
+                                dismiss()
                             }, label: {
                                 Text("Sign In")
                                     .font(Font.custom("Lato", size: 14))
                                     .foregroundColor(Color(red: 1, green: 0.65, blue: 0))
-
                             })
                         }
                         .padding(.top,14)
                         .padding(.bottom, 40)
                     }
-                    .padding(.horizontal, 0)
                     .padding(.top, 50)
                     .background()
                     .frame(maxWidth: .infinity)
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
