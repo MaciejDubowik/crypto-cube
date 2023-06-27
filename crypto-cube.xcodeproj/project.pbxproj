@@ -24,6 +24,8 @@
 		0E2F999A2A4A277E00CFFE03 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2F99992A4A277E00CFFE03 /* FirebaseStorage */; };
 		0E2F999C2A4AE62D00CFFE03 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F999B2A4AE62D00CFFE03 /* RegistrationViewModel.swift */; };
 		0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */; };
+		0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99B32A4B743C00CFFE03 /* LoginView.swift */; };
+		0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		0E2F99902A4A256500CFFE03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E2F999B2A4AE62D00CFFE03 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldStyle.swift; sourceTree = "<group>"; };
+		0E2F99B32A4B743C00CFFE03 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		0E2F99832A48EFF700CFFE03 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99B22A4B742900CFFE03 /* Login */,
 				0E2F99842A48F00F00CFFE03 /* Registration */,
 			);
 			path = Screens;
@@ -215,6 +220,31 @@
 				0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0E2F99B22A4B742900CFFE03 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99B52A4B744300CFFE03 /* View */,
+				0E2F99B62A4B744C00CFFE03 /* VIewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0E2F99B52A4B744300CFFE03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99B32A4B743C00CFFE03 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E2F99B62A4B744C00CFFE03 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +393,9 @@
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
 				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
 				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
+				0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */,
 				0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */,
+				0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
