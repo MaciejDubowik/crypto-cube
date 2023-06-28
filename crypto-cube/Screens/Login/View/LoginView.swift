@@ -10,7 +10,6 @@ import SwiftUI
 struct LoginView: View {
     @ObservedObject var loginViewModel = LoginViewModel()
     
-
     var body: some View {
         NavigationView{
             VStack {
@@ -21,15 +20,14 @@ struct LoginView: View {
                         .edgesIgnoringSafeArea(.all)
 
                     VStack {
-                        VStack{
+                        VStack {
                             Text("Sign In")
                                 .foregroundColor(.white)
-                                .font(.system(size: 40))
+                                .font(Font.custom(S.Font.Lato.bold, size: 40))
                                 .frame(maxWidth: .infinity, alignment: .leading)
-
                             Text("Sign In to your account")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15))
+                                .font(Font.custom(S.Font.Lato.semiBold, size: 16))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         .padding(.leading, 105)
@@ -41,36 +39,33 @@ struct LoginView: View {
                             VStack {
                                 DefaultTextField(placeholder: "Email", text: $loginViewModel.user.email)
                                 SecureTextField(placeholder: "Password", text: $loginViewModel.user.password)
-
                                 Text(loginViewModel.message)
-                                    .font(Font.custom("Lato", size: 14))
+                                    .font(Font.custom(S.Font.Lato.regular, size: 14))
                                     .foregroundColor(.red)
                             }
                             .padding(.bottom, 30)
 
                             Button(action: {
-                                print("Sign in")
                                 loginViewModel.login()
                             }, label: {
                                 Text("Sign In")
+                                    .font(Font.custom(S.Font.Lato.semiBold, size: 19))
                                     .foregroundColor(.black)
                                     .frame(width: 342, height: 51)
-                                    .background(Color(red: 1, green: 0.65, blue: 0))
+                                    .background(Color(hex: S.Color.orange))
                                     .cornerRadius(10)
                             })
 
-
-                            HStack{
+                            HStack {
                                 Text("Don't have an account?")
-                                    .font(Font.custom("Lato", size: 14))
-                                    .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
+                                    .font(Font.custom(S.Font.Lato.regular, size: 14))
+                                    .foregroundColor(Color(hex: S.Color.lightGray))
 
                                 NavigationLink(destination: RegistrationView(), label: {
                                     Text("Sign Up")
-                                        .font(Font.custom("Lato", size: 14))
-                                        .foregroundColor(Color(red: 1, green: 0.65, blue: 0))
+                                        .font(Font.custom(S.Font.Lato.regular, size: 14))
+                                        .foregroundColor(Color(hex: S.Color.orange))
                                 })
-
                             }
                             .padding(.top,14)
                             .padding(.bottom, 40)

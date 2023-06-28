@@ -18,7 +18,7 @@ struct DefaultTextFieldStyle: TextFieldStyle {
             .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .inset(by: 0.5)
-            .stroke(Color(red: 0.63, green: 0.63, blue: 0.63), lineWidth: 1)
+                .stroke(Color(hex: S.Color.lightGray), lineWidth: 1)
             )
     }
 }
@@ -30,8 +30,8 @@ struct DefaultTextField: View {
 
     var body: some View {
         Text(placeholder)
-            .font(Font.custom("Lato", size: 14))
-            .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
+            .font(Font.custom(S.Font.Lato.regular, size: 14))
+            .foregroundColor(Color(hex: S.Color.lightGray))
             .frame(width: 332, alignment: .leading)
 
         TextField("", text: $text)
@@ -43,10 +43,5 @@ struct DefaultTextField: View {
     }
 }
 
-//struct DefaultTextFieldView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DefaultTextField()
-//    }
-//}
 
 

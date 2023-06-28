@@ -14,7 +14,7 @@ class LoginViewModel: ObservableObject {
 
     func login() {
         Auth.auth().signIn(withEmail: user.email, password: user.password) { (result, err) in
-            if let err = err {
+            if err != nil {
                 self.message = "Incorrect email or password."
                 return
             } else {

@@ -7,3 +7,11 @@
 */
 
 "title" = "Crypto Cube";
+
+"color.lightGray" = "A0A0A0";
+"color.orange" = "FFA500";
+
+"Font.Lato.regular" = "Lato-Regular";
+"Font.Lato.semiBold" = "Lato-SemiBold";
+"Font.Lato.bold" = "Lato-Bold";
+"Font.Lato.extraBold" = "Lato-ExtraBold";

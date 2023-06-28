@@ -29,8 +29,8 @@ struct SecureTextField: View {
 
     var body: some View {
         Text(placeholder)
-            .font(Font.custom("Lato", size: 14))
-            .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
+            .font(Font.custom(S.Font.Lato.regular, size: 14))
+            .foregroundColor(Color(hex: S.Color.lightGray))
             .frame(width: 332, alignment: .leading)
 
         SecureField("", text: $text)

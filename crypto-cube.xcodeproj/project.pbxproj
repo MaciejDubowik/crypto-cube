@@ -29,6 +29,11 @@
 		0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99BE2A4C28AD00CFFE03 /* HomeView.swift */; };
 		0E2F99C22A4C2CF300CFFE03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */; };
 		0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */; };
+		0E2F99C72A4C33C100CFFE03 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99C62A4C33C100CFFE03 /* Color+Hex.swift */; };
+		0E2F99CB2A4C351100CFFE03 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99C82A4C351100CFFE03 /* Lato-Bold.ttf */; };
+		0E2F99CD2A4C351100CFFE03 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */; };
+		0E2F99D12A4C35EC00CFFE03 /* Lato-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99D02A4C35EC00CFFE03 /* Lato-ExtraBold.ttf */; };
+		0E2F99D32A4C39DF00CFFE03 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99D22A4C39DF00CFFE03 /* Lato-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,12 @@
 		0E2F99BE2A4C28AD00CFFE03 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		0E2F99C62A4C33C100CFFE03 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		0E2F99C82A4C351100CFFE03 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		0E2F99CE2A4C353400CFFE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E2F99D02A4C35EC00CFFE03 /* Lato-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0E2F99D22A4C39DF00CFFE03 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +135,7 @@
 		0E2F99562A48ED6300CFFE03 /* crypto-cube */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99CE2A4C353400CFFE03 /* Info.plist */,
 				0E2F99C02A4C2C7700CFFE03 /* Helpers */,
 				0E2F998D2A4982C700CFFE03 /* Components */,
 				0E2F99832A48EFF700CFFE03 /* Screens */,
@@ -164,6 +176,7 @@
 		0E2F99812A48EF5D00CFFE03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99CF2A4C35BF00CFFE03 /* Fonts */,
 				0E2F995B2A48ED6500CFFE03 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -276,8 +289,20 @@
 			children = (
 				0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */,
 				0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */,
+				0E2F99C62A4C33C100CFFE03 /* Color+Hex.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0E2F99CF2A4C35BF00CFFE03 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99D22A4C39DF00CFFE03 /* Lato-Semibold.ttf */,
+				0E2F99D02A4C35EC00CFFE03 /* Lato-ExtraBold.ttf */,
+				0E2F99C82A4C351100CFFE03 /* Lato-Bold.ttf */,
+				0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,8 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2F995F2A48ED6500CFFE03 /* Preview Assets.xcassets in Resources */,
+				0E2F99D32A4C39DF00CFFE03 /* Lato-Semibold.ttf in Resources */,
+				0E2F99CB2A4C351100CFFE03 /* Lato-Bold.ttf in Resources */,
+				0E2F99D12A4C35EC00CFFE03 /* Lato-ExtraBold.ttf in Resources */,
 				0E2F99C22A4C2CF300CFFE03 /* Localizable.strings in Resources */,
 				0E2F99912A4A256500CFFE03 /* GoogleService-Info.plist in Resources */,
+				0E2F99CD2A4C351100CFFE03 /* Lato-Regular.ttf in Resources */,
 				0E2F995C2A48ED6500CFFE03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +455,7 @@
 				0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */,
 				0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */,
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
+				0E2F99C72A4C33C100CFFE03 /* Color+Hex.swift in Sources */,
 				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
 				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
 				0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */,
@@ -593,6 +623,7 @@
 				DEVELOPMENT_TEAM = 5464LMAQBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "crypto-cube/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -622,6 +653,7 @@
 				DEVELOPMENT_TEAM = 5464LMAQBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "crypto-cube/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

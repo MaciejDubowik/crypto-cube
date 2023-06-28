@@ -19,15 +19,15 @@ struct RegistrationView: View {
                     .edgesIgnoringSafeArea(.all)
 
                 VStack {
-                    VStack{
+                    VStack {
                         Text("Sign Up")
                             .foregroundColor(.white)
-                            .font(.system(size: 40))
+                            .font(Font.custom(S.Font.Lato.bold, size: 40))
                             .frame(maxWidth: .infinity, alignment: .leading)
 
                         Text("Create your account")
                             .foregroundColor(.white)
-                            .font(.system(size: 15))
+                            .font(Font.custom(S.Font.Lato.semiBold, size: 16))
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(.leading, 105)
@@ -43,7 +43,7 @@ struct RegistrationView: View {
                             SecureTextField(placeholder: "Confirm Password", text: $registrationViewModel.repeatedPassword)            .textContentType(.password)
 
                             Text(registrationViewModel.message)
-                                .font(Font.custom("Lato", size: 14))
+                                .font(Font.custom(S.Font.Lato.regular, size: 14))
                                 .foregroundColor(.red)
                         }
                         .padding(.bottom, 30)
@@ -53,23 +53,24 @@ struct RegistrationView: View {
                             registrationViewModel.validateAndRegister()
                         }, label: {
                             Text("Sign Up")
+                                .font(Font.custom(S.Font.Lato.semiBold, size: 19))
                                 .foregroundColor(.black)
                                 .frame(width: 342, height: 51)
-                                .background(Color(red: 1, green: 0.65, blue: 0))
+                                .background(Color(hex: S.Color.orange))
                                 .cornerRadius(10)
                         })
 
-
-                        HStack{
+                        HStack {
                             Text("Have an account?")
-                                .font(Font.custom("Lato", size: 14))
-                                .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
+                                .font(Font.custom(S.Font.Lato.regular, size: 14))
+                                .foregroundColor(Color(hex: S.Color.lightGray))
+
                             Button(action: {
                                 dismiss()
                             }, label: {
                                 Text("Sign In")
-                                    .font(Font.custom("Lato", size: 14))
-                                    .foregroundColor(Color(red: 1, green: 0.65, blue: 0))
+                                    .font(Font.custom(S.Font.Lato.regular, size: 14))
+                                    .foregroundColor(Color(hex: S.Color.orange))
                             })
                         }
                         .padding(.top,14)
