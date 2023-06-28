@@ -26,6 +26,9 @@
 		0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */; };
 		0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99B32A4B743C00CFFE03 /* LoginView.swift */; };
 		0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */; };
+		0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99BE2A4C28AD00CFFE03 /* HomeView.swift */; };
+		0E2F99C22A4C2CF300CFFE03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */; };
+		0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldStyle.swift; sourceTree = "<group>"; };
 		0E2F99B32A4B743C00CFFE03 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0E2F99BE2A4C28AD00CFFE03 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		0E2F99562A48ED6300CFFE03 /* crypto-cube */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99C02A4C2C7700CFFE03 /* Helpers */,
 				0E2F998D2A4982C700CFFE03 /* Components */,
 				0E2F99832A48EFF700CFFE03 /* Screens */,
 				0E2F99822A48EF9E00CFFE03 /* Networking */,
@@ -173,6 +180,7 @@
 		0E2F99832A48EFF700CFFE03 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99B92A4C26D000CFFE03 /* Home */,
 				0E2F99B22A4B742900CFFE03 /* Login */,
 				0E2F99842A48F00F00CFFE03 /* Registration */,
 			);
@@ -245,6 +253,31 @@
 				0E2F99B72A4B747200CFFE03 /* LoginViewModel.swift */,
 			);
 			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		0E2F99B92A4C26D000CFFE03 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99BA2A4C27AA00CFFE03 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E2F99BA2A4C27AA00CFFE03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99BE2A4C28AD00CFFE03 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E2F99C02A4C2C7700CFFE03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99C32A4C2E0200CFFE03 /* Strings+Generated.swift */,
+				0E2F99C12A4C2CF300CFFE03 /* Localizable.strings */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2F995F2A48ED6500CFFE03 /* Preview Assets.xcassets in Resources */,
+				0E2F99C22A4C2CF300CFFE03 /* Localizable.strings in Resources */,
 				0E2F99912A4A256500CFFE03 /* GoogleService-Info.plist in Resources */,
 				0E2F995C2A48ED6500CFFE03 /* Assets.xcassets in Resources */,
 			);
@@ -390,12 +424,14 @@
 				0E2F995A2A48ED6300CFFE03 /* ContentView.swift in Sources */,
 				0E2F999C2A4AE62D00CFFE03 /* RegistrationViewModel.swift in Sources */,
 				0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */,
+				0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */,
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
 				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
 				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
 				0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */,
 				0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */,
 				0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */,
+				0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
