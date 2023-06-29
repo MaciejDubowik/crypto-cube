@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99572A48ED6300CFFE03 /* crypto_cubeApp.swift */; };
-		0E2F995A2A48ED6300CFFE03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99592A48ED6300CFFE03 /* ContentView.swift */; };
 		0E2F995C2A48ED6500CFFE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F995B2A48ED6500CFFE03 /* Assets.xcassets */; };
 		0E2F995F2A48ED6500CFFE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F995E2A48ED6500CFFE03 /* Preview Assets.xcassets */; };
 		0E2F99692A48ED6600CFFE03 /* crypto_cubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99682A48ED6600CFFE03 /* crypto_cubeTests.swift */; };
@@ -34,6 +33,9 @@
 		0E2F99CD2A4C351100CFFE03 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */; };
 		0E2F99D12A4C35EC00CFFE03 /* Lato-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99D02A4C35EC00CFFE03 /* Lato-ExtraBold.ttf */; };
 		0E2F99D32A4C39DF00CFFE03 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F99D22A4C39DF00CFFE03 /* Lato-Semibold.ttf */; };
+		0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */; };
+		0E2F99DC2A4E133000CFFE03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99DB2A4E133000CFFE03 /* SearchView.swift */; };
+		0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,6 @@
 /* Begin PBXFileReference section */
 		0E2F99542A48ED6300CFFE03 /* crypto-cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-cube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2F99572A48ED6300CFFE03 /* crypto_cubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_cubeApp.swift; sourceTree = "<group>"; };
-		0E2F99592A48ED6300CFFE03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E2F995B2A48ED6500CFFE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2F995E2A48ED6500CFFE03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E2F99642A48ED6500CFFE03 /* crypto-cubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crypto-cubeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,9 +79,12 @@
 		0E2F99C62A4C33C100CFFE03 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		0E2F99C82A4C351100CFFE03 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
-		0E2F99CE2A4C353400CFFE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E2F99CE2A4C353400CFFE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E2F99D02A4C35EC00CFFE03 /* Lato-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0E2F99D22A4C39DF00CFFE03 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
+		0E2F99DB2A4E133000CFFE03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,15 +139,14 @@
 		0E2F99562A48ED6300CFFE03 /* crypto-cube */ = {
 			isa = PBXGroup;
 			children = (
-				0E2F99CE2A4C353400CFFE03 /* Info.plist */,
-				0E2F99C02A4C2C7700CFFE03 /* Helpers */,
-				0E2F998D2A4982C700CFFE03 /* Components */,
 				0E2F99832A48EFF700CFFE03 /* Screens */,
+				0E2F998D2A4982C700CFFE03 /* Components */,
 				0E2F99822A48EF9E00CFFE03 /* Networking */,
+				0E2F99C02A4C2C7700CFFE03 /* Helpers */,
 				0E2F99812A48EF5D00CFFE03 /* Resources */,
-				0E2F99572A48ED6300CFFE03 /* crypto_cubeApp.swift */,
-				0E2F99592A48ED6300CFFE03 /* ContentView.swift */,
 				0E2F995D2A48ED6500CFFE03 /* Preview Content */,
+				0E2F99572A48ED6300CFFE03 /* crypto_cubeApp.swift */,
+				0E2F99CE2A4C353400CFFE03 /* Info.plist */,
 			);
 			path = "crypto-cube";
 			sourceTree = "<group>";
@@ -193,6 +196,10 @@
 		0E2F99832A48EFF700CFFE03 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F99DA2A4C4E4700CFFE03 /* Wallet */,
+				0E2F99D92A4C4E2700CFFE03 /* Favorites */,
+				0E2F99D82A4C4E2000CFFE03 /* Search */,
+				0E2F99D62A4C4DE700CFFE03 /* Main */,
 				0E2F99B92A4C26D000CFFE03 /* Home */,
 				0E2F99B22A4B742900CFFE03 /* Login */,
 				0E2F99842A48F00F00CFFE03 /* Registration */,
@@ -239,6 +246,8 @@
 			children = (
 				0E2F998E2A49866900CFFE03 /* DefaultTextFieldStyle.swift */,
 				0E2F99A52A4B549800CFFE03 /* SecureTextFieldStyle.swift */,
+				0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */,
+				0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,6 +312,43 @@
 				0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0E2F99D62A4C4DE700CFFE03 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99D72A4C4DF100CFFE03 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0E2F99D72A4C4DF100CFFE03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E2F99D82A4C4E2000CFFE03 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99DB2A4E133000CFFE03 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0E2F99D92A4C4E2700CFFE03 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		0E2F99DA2A4C4E4700CFFE03 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,16 +496,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2F995A2A48ED6300CFFE03 /* ContentView.swift in Sources */,
 				0E2F999C2A4AE62D00CFFE03 /* RegistrationViewModel.swift in Sources */,
 				0E2F99582A48ED6300CFFE03 /* crypto_cubeApp.swift in Sources */,
 				0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */,
+				0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */,
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
 				0E2F99C72A4C33C100CFFE03 /* Color+Hex.swift in Sources */,
 				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
 				0E2F998F2A49866900CFFE03 /* DefaultTextFieldStyle.swift in Sources */,
 				0E2F99B42A4B743C00CFFE03 /* LoginView.swift in Sources */,
+				0E2F99DC2A4E133000CFFE03 /* SearchView.swift in Sources */,
 				0E2F998C2A49819000CFFE03 /* RegistrationView.swift in Sources */,
+				0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */,
 				0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */,
 				0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */,
 			);

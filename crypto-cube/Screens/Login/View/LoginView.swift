@@ -11,8 +11,7 @@ struct LoginView: View {
     @ObservedObject var loginViewModel = LoginViewModel()
     
     var body: some View {
-        NavigationView{
-            VStack {
+        NavigationView {
                 ZStack{
                     Image("register-background")
                         .resizable()
@@ -79,7 +78,7 @@ struct LoginView: View {
             }
         }
     }
-}
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
