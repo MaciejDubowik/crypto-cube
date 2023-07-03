@@ -36,6 +36,7 @@
 		0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */; };
 		0E2F99DC2A4E133000CFFE03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99DB2A4E133000CFFE03 /* SearchView.swift */; };
 		0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */; };
+		0EE050472A4F2C7800FB80A6 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050462A4F2C7800FB80A6 /* CryptoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
 		0E2F99DB2A4E133000CFFE03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
+		0EE050462A4F2C7800FB80A6 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2F99DB2A4E133000CFFE03 /* SearchView.swift */,
+				0EE050462A4F2C7800FB80A6 /* CryptoData.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */,
 				0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */,
 				0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */,
+				0EE050472A4F2C7800FB80A6 /* CryptoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

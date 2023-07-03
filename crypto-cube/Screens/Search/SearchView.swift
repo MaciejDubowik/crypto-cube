@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct SearchView: View {
-
     @State var text = ""
+    let values: [CryptoData] = [
+        CryptoData(name: "Bitcoin", shortName: "BTC", price: 32000.38),
+        CryptoData(name: "Ethereum", shortName: "ETH", price: 1200.21),
+        CryptoData(name: "Dogecoin", shortName: "DOGE", price: 0.06)
+    ]
 
     var body: some View {
         ZStack {
-            Color(.blue)
+            Color(hex: "EAEAEA")
 
             VStack {
                     VStack {
@@ -79,8 +83,10 @@ struct SearchView: View {
 
                     Spacer()
 
-                    List(0 ..< 40) { item in
-                        Text("Bitcoin")
+                    List {
+                        ForEach(values){ item in
+                            Text("\(item.name) | \(item.shortName) |  $\(item.price, specifier: "%.2f")")
+                        }
                     }
                     .padding(.top, 10)
 
