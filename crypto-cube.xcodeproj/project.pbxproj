@@ -37,6 +37,9 @@
 		0E2F99DC2A4E133000CFFE03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99DB2A4E133000CFFE03 /* SearchView.swift */; };
 		0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */; };
 		0EE050472A4F2C7800FB80A6 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050462A4F2C7800FB80A6 /* CryptoData.swift */; };
+		369B8700E845C8F7EABF9D01 /* Pods_crypto_cube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131E8FB86FA78F8DD8755B69 /* Pods_crypto_cube.framework */; };
+		3B22BF44D4A9A9B8E0A47878 /* Pods_crypto_cube_crypto_cubeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C399AD51B3EFC33DCF3720D /* Pods_crypto_cube_crypto_cubeUITests.framework */; };
+		CEC148D4AF26D34BCEBAE8E3 /* Pods_crypto_cubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566FA5933D933771914862C9 /* Pods_crypto_cubeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,15 @@
 		0E2F99DB2A4E133000CFFE03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 		0EE050462A4F2C7800FB80A6 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
+		131E8FB86FA78F8DD8755B69 /* Pods_crypto_cube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crypto_cube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF638EEEF269025F0C2F708 /* Pods-crypto-cubeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cubeTests.debug.xcconfig"; path = "Target Support Files/Pods-crypto-cubeTests/Pods-crypto-cubeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51B5B1494DC2B0DDCF95AB2A /* Pods-crypto-cube-crypto-cubeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cube-crypto-cubeUITests.release.xcconfig"; path = "Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		566FA5933D933771914862C9 /* Pods_crypto_cubeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crypto_cubeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D48E2F5E6D3E7C869EEF2D2 /* Pods-crypto-cube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cube.release.xcconfig"; path = "Target Support Files/Pods-crypto-cube/Pods-crypto-cube.release.xcconfig"; sourceTree = "<group>"; };
+		6C399AD51B3EFC33DCF3720D /* Pods_crypto_cube_crypto_cubeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crypto_cube_crypto_cubeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9F3D4AF3020158CF193697 /* Pods-crypto-cubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cubeTests.release.xcconfig"; path = "Target Support Files/Pods-crypto-cubeTests/Pods-crypto-cubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B15C3EBAA9FD046826168D5A /* Pods-crypto-cube-crypto-cubeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cube-crypto-cubeUITests.debug.xcconfig"; path = "Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CCA933B70EDCA6743A661C /* Pods-crypto-cube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cube.debug.xcconfig"; path = "Target Support Files/Pods-crypto-cube/Pods-crypto-cube.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 				0E2F999A2A4A277E00CFFE03 /* FirebaseStorage in Frameworks */,
 				0E2F99962A4A277E00CFFE03 /* FirebaseAuth in Frameworks */,
 				0E2F99982A4A277E00CFFE03 /* FirebaseFirestore in Frameworks */,
+				369B8700E845C8F7EABF9D01 /* Pods_crypto_cube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC148D4AF26D34BCEBAE8E3 /* Pods_crypto_cubeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B22BF44D4A9A9B8E0A47878 /* Pods_crypto_cube_crypto_cubeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +140,8 @@
 				0E2F99672A48ED6600CFFE03 /* crypto-cubeTests */,
 				0E2F99712A48ED6600CFFE03 /* crypto-cubeUITests */,
 				0E2F99552A48ED6300CFFE03 /* Products */,
+				A07C0DE569B69CC4191A8EFB /* Pods */,
+				D2E6E92651F8E7D4FD57FA54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,6 +371,30 @@
 			path = Wallet;
 			sourceTree = "<group>";
 		};
+		A07C0DE569B69CC4191A8EFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CCA933B70EDCA6743A661C /* Pods-crypto-cube.debug.xcconfig */,
+				5D48E2F5E6D3E7C869EEF2D2 /* Pods-crypto-cube.release.xcconfig */,
+				B15C3EBAA9FD046826168D5A /* Pods-crypto-cube-crypto-cubeUITests.debug.xcconfig */,
+				51B5B1494DC2B0DDCF95AB2A /* Pods-crypto-cube-crypto-cubeUITests.release.xcconfig */,
+				1BF638EEEF269025F0C2F708 /* Pods-crypto-cubeTests.debug.xcconfig */,
+				7C9F3D4AF3020158CF193697 /* Pods-crypto-cubeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2E6E92651F8E7D4FD57FA54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131E8FB86FA78F8DD8755B69 /* Pods_crypto_cube.framework */,
+				6C399AD51B3EFC33DCF3720D /* Pods_crypto_cube_crypto_cubeUITests.framework */,
+				566FA5933D933771914862C9 /* Pods_crypto_cubeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,9 +402,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E2F99782A48ED6600CFFE03 /* Build configuration list for PBXNativeTarget "crypto-cube" */;
 			buildPhases = (
+				1310740B5227C467E2270AF4 /* [CP] Check Pods Manifest.lock */,
 				0E2F99502A48ED6300CFFE03 /* Sources */,
 				0E2F99512A48ED6300CFFE03 /* Frameworks */,
 				0E2F99522A48ED6300CFFE03 /* Resources */,
+				A7E64EF8BD53F4B549FB1423 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +427,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E2F997B2A48ED6600CFFE03 /* Build configuration list for PBXNativeTarget "crypto-cubeTests" */;
 			buildPhases = (
+				7884A6D52DA5CD259B676E0C /* [CP] Check Pods Manifest.lock */,
 				0E2F99602A48ED6500CFFE03 /* Sources */,
 				0E2F99612A48ED6500CFFE03 /* Frameworks */,
 				0E2F99622A48ED6500CFFE03 /* Resources */,
@@ -402,9 +446,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E2F997E2A48ED6600CFFE03 /* Build configuration list for PBXNativeTarget "crypto-cubeUITests" */;
 			buildPhases = (
+				FE39B4E215A3AA0D9EFF1DE6 /* [CP] Check Pods Manifest.lock */,
 				0E2F996A2A48ED6600CFFE03 /* Sources */,
 				0E2F996B2A48ED6600CFFE03 /* Frameworks */,
 				0E2F996C2A48ED6600CFFE03 /* Resources */,
+				7C2DC1CFE433928173D8E8D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -493,6 +539,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1310740B5227C467E2270AF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crypto-cube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7884A6D52DA5CD259B676E0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crypto-cubeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C2DC1CFE433928173D8E8D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7E64EF8BD53F4B549FB1423 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-cube/Pods-crypto-cube-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-cube/Pods-crypto-cube-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-crypto-cube/Pods-crypto-cube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE39B4E215A3AA0D9EFF1DE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crypto-cube-crypto-cubeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E2F99502A48ED6300CFFE03 /* Sources */ = {
@@ -666,6 +815,7 @@
 		};
 		0E2F99792A48ED6600CFFE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CCA933B70EDCA6743A661C /* Pods-crypto-cube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -696,6 +846,7 @@
 		};
 		0E2F997A2A48ED6600CFFE03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D48E2F5E6D3E7C869EEF2D2 /* Pods-crypto-cube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -726,6 +877,7 @@
 		};
 		0E2F997C2A48ED6600CFFE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF638EEEF269025F0C2F708 /* Pods-crypto-cubeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,6 +898,7 @@
 		};
 		0E2F997D2A48ED6600CFFE03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9F3D4AF3020158CF193697 /* Pods-crypto-cubeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -766,6 +919,7 @@
 		};
 		0E2F997F2A48ED6600CFFE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15C3EBAA9FD046826168D5A /* Pods-crypto-cube-crypto-cubeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,6 +938,7 @@
 		};
 		0E2F99802A48ED6600CFFE03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B5B1494DC2B0DDCF95AB2A /* Pods-crypto-cube-crypto-cubeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
