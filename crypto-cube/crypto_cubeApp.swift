@@ -28,7 +28,7 @@ struct crypto_cubeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            SearchView()
         }
     }
 }

@@ -48,6 +48,8 @@ struct SearchView: View {
 
                             Button(action: {
                                 print("search")
+                                APIFetchHandler.sharedInstance.fetchAPIData()
+                                
                             }, label: {
                                 ZStack{
                                     Circle()
