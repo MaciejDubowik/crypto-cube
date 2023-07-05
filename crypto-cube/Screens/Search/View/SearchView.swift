@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct SearchView: View {
+
     @State var text = ""
-    let values: [CryptoData] = [
-        CryptoData(name: "Bitcoin", shortName: "BTC", price: 32000.38),
-        CryptoData(name: "Ethereum", shortName: "ETH", price: 1200.21),
-        CryptoData(name: "Dogecoin", shortName: "DOGE", price: 0.06)
-    ]
+
+    @State var searchResults: [CoreCrypto] = []
 
     var body: some View {
         ZStack {
@@ -47,10 +45,11 @@ struct SearchView: View {
                             Spacer()
 
                             Button(action: {
-                                print("search")
-                                APIFetchHandler.sharedInstance.fetchAPIData()
-                                
-                            }, label: {
+                                print("search for \(text)")
+                                APIFetchHandler.sharedInstance.fetchAPIData(searchedResult: text) { result in
+                                    DispatchQueue.main.async {
+                                        searchResults = result as? [CoreCrypto] ?? []
+                                    }}}, label: {
                                 ZStack{
                                     Circle()
                                         .frame(width: 36, height: 36)
@@ -86,9 +85,10 @@ struct SearchView: View {
                     Spacer()
 
                     List {
-                        ForEach(values){ item in
-                            Text("\(item.name) | \(item.shortName) |  $\(item.price, specifier: "%.2f")")
+                        ForEach(searchResults) { item in
+                            Text("\(item.name) | \(item.ticker) |  \(item.network)")
                         }
+
                     }
                     .padding(.top, 10)
 

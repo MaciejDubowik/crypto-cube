@@ -36,9 +36,11 @@
 		0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */; };
 		0E2F99DC2A4E133000CFFE03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F99DB2A4E133000CFFE03 /* SearchView.swift */; };
 		0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */; };
-		0EE050472A4F2C7800FB80A6 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050462A4F2C7800FB80A6 /* CryptoData.swift */; };
+		0EE050472A4F2C7800FB80A6 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050462A4F2C7800FB80A6 /* Crypto.swift */; };
 		0EFDD6082A536C6F006CC31F /* APIFetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */; };
 		0EFDD60C2A54B3FC006CC31F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFDD60B2A54B3FC006CC31F /* Config.swift */; };
+		0EFDD6132A54B92E006CC31F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFDD6122A54B92E006CC31F /* SearchViewModel.swift */; };
+		0EFDD6162A5584F9006CC31F /* CoreCrpytoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFDD6152A5584F9006CC31F /* CoreCrpytoData.swift */; };
 		369B8700E845C8F7EABF9D01 /* Pods_crypto_cube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131E8FB86FA78F8DD8755B69 /* Pods_crypto_cube.framework */; };
 		3B22BF44D4A9A9B8E0A47878 /* Pods_crypto_cube_crypto_cubeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C399AD51B3EFC33DCF3720D /* Pods_crypto_cube_crypto_cubeUITests.framework */; };
 		CEC148D4AF26D34BCEBAE8E3 /* Pods_crypto_cubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566FA5933D933771914862C9 /* Pods_crypto_cubeTests.framework */; };
@@ -91,9 +93,11 @@
 		0E2F99D42A4C4DB900CFFE03 /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
 		0E2F99DB2A4E133000CFFE03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
-		0EE050462A4F2C7800FB80A6 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
+		0EE050462A4F2C7800FB80A6 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetchHandler.swift; sourceTree = "<group>"; };
 		0EFDD60B2A54B3FC006CC31F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0EFDD6122A54B92E006CC31F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		0EFDD6152A5584F9006CC31F /* CoreCrpytoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCrpytoData.swift; sourceTree = "<group>"; };
 		131E8FB86FA78F8DD8755B69 /* Pods_crypto_cube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crypto_cube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF638EEEF269025F0C2F708 /* Pods-crypto-cubeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cubeTests.debug.xcconfig"; path = "Target Support Files/Pods-crypto-cubeTests/Pods-crypto-cubeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		51B5B1494DC2B0DDCF95AB2A /* Pods-crypto-cube-crypto-cubeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-cube-crypto-cubeUITests.release.xcconfig"; path = "Target Support Files/Pods-crypto-cube-crypto-cubeUITests/Pods-crypto-cube-crypto-cubeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,8 +216,8 @@
 		0E2F99822A48EF9E00CFFE03 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0E2F99902A4A256500CFFE03 /* GoogleService-Info.plist */,
-				0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */,
+				0EFDD60E2A54B4F7006CC31F /* Swapzone */,
+				0EFDD60D2A54B4EE006CC31F /* Firebase */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -357,8 +361,9 @@
 		0E2F99D82A4C4E2000CFFE03 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				0E2F99DB2A4E133000CFFE03 /* SearchView.swift */,
-				0EE050462A4F2C7800FB80A6 /* CryptoData.swift */,
+				0EFDD6112A54B911006CC31F /* Model */,
+				0EFDD6102A54B90C006CC31F /* View */,
+				0EFDD60F2A54B909006CC31F /* Viewmodel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -375,6 +380,55 @@
 			children = (
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		0EFDD60D2A54B4EE006CC31F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99902A4A256500CFFE03 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		0EFDD60E2A54B4F7006CC31F /* Swapzone */ = {
+			isa = PBXGroup;
+			children = (
+				0EFDD6142A558474006CC31F /* Model */,
+				0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */,
+			);
+			path = Swapzone;
+			sourceTree = "<group>";
+		};
+		0EFDD60F2A54B909006CC31F /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				0EFDD6122A54B92E006CC31F /* SearchViewModel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		0EFDD6102A54B90C006CC31F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F99DB2A4E133000CFFE03 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EFDD6112A54B911006CC31F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EE050462A4F2C7800FB80A6 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EFDD6142A558474006CC31F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EFDD6152A5584F9006CC31F /* CoreCrpytoData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A07C0DE569B69CC4191A8EFB /* Pods */ = {
@@ -659,6 +713,7 @@
 				0E2F99BF2A4C28AD00CFFE03 /* HomeView.swift in Sources */,
 				0EFDD60C2A54B3FC006CC31F /* Config.swift in Sources */,
 				0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */,
+				0EFDD6132A54B92E006CC31F /* SearchViewModel.swift in Sources */,
 				0E2F998A2A497FB200CFFE03 /* User.swift in Sources */,
 				0E2F99C72A4C33C100CFFE03 /* Color+Hex.swift in Sources */,
 				0E2F99A62A4B549800CFFE03 /* SecureTextFieldStyle.swift in Sources */,
@@ -669,7 +724,8 @@
 				0E2F99D52A4C4DB900CFFE03 /* Navbar.swift in Sources */,
 				0E2F99B82A4B747200CFFE03 /* LoginViewModel.swift in Sources */,
 				0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */,
-				0EE050472A4F2C7800FB80A6 /* CryptoData.swift in Sources */,
+				0EE050472A4F2C7800FB80A6 /* Crypto.swift in Sources */,
+				0EFDD6162A5584F9006CC31F /* CoreCrpytoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
