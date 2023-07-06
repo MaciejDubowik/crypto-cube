@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-
     @State var text = ""
-
     @State var searchResults: [CoreCrypto] = []
 
     var body: some View {
@@ -86,7 +84,13 @@ struct SearchView: View {
 
                     List {
                         ForEach(searchResults) { item in
-                            Text("\(item.name) | \(item.ticker) |  \(item.network)")
+
+                            Button(action: {
+                                print("\(item.ticker)")
+                            }, label: {
+                                Text("\(item.name) | \(item.ticker) |  \(item.network)")
+                            })
+
                         }
 
                     }

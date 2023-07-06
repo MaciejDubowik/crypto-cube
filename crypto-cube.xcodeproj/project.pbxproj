@@ -228,7 +228,6 @@
 				0E2F99DA2A4C4E4700CFFE03 /* Wallet */,
 				0E2F99D92A4C4E2700CFFE03 /* Favorites */,
 				0E2F99D82A4C4E2000CFFE03 /* Search */,
-				0E2F99D62A4C4DE700CFFE03 /* Main */,
 				0E2F99B92A4C26D000CFFE03 /* Home */,
 				0E2F99B22A4B742900CFFE03 /* Login */,
 				0E2F99842A48F00F00CFFE03 /* Registration */,
@@ -341,21 +340,6 @@
 				0E2F99CA2A4C351100CFFE03 /* Lato-Regular.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		0E2F99D62A4C4DE700CFFE03 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				0E2F99D72A4C4DF100CFFE03 /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		0E2F99D72A4C4DF100CFFE03 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0E2F99D82A4C4E2000CFFE03 /* Search */ = {
