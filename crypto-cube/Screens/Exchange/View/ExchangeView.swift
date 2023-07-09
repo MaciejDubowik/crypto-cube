@@ -12,8 +12,8 @@ struct ExchangeView: View {
     let name: String
     let ticker: String
 
-    @State var textBTC = ""
-    @State var textOther = ""
+    @State var textBTC = "0.00"
+    @State var textResult = "0.00"
 
     var body: some View {
         ZStack{
@@ -31,16 +31,21 @@ struct ExchangeView: View {
                 }
                 .padding(.leading, 30)
                 .padding(.top, 10)
+                .padding(.bottom, 50)
 
 
                 DefaultTextField(placeholder: "from BTC", text: $textBTC)
-                DefaultTextField(placeholder: "to \(ticker)", text: $textOther)
+                DefaultTextField(placeholder: "to \(ticker)", text: $textResult)
 
                 Spacer()
 
                 Button(action: {
                     print("calculate")
-                    APIFetchHandler.sharedInstance.fetchExchangeData()
+                    print(textResult)
+                    APIFetchHandler.sharedInstance.fetchExchangeData(toTicker: ticker, amount: Double(textBTC)!, completion: { result in
+                        textResult = "\(result)"
+                    })
+                    print(textResult)
                 }, label: {
                     Text("Calculate")
                         .font(Font.custom(S.Font.Lato.semiBold, size: 19))

@@ -29,8 +29,8 @@ class APIFetchHandler {
         }
     }
 
-    func fetchExchangeData(){
-        let url = "https://api.swapzone.io/v1/exchange/get-rate?from=btc&to=doge&amount=0.1&rateType=all&availableInUSA=false&chooseRate=best&noRefundAddress=false"
+    func fetchExchangeData(toTicker: String, amount: Double, completion: @escaping (Double) -> Void) {
+        let url = "https://api.swapzone.io/v1/exchange/get-rate?from=btc&to=\(toTicker)&amount=\(amount)&rateType=all&availableInUSA=false&chooseRate=best&noRefundAddress=false"
         let headers: HTTPHeaders = [
             "x-api-key": Config.swapzoneAPIKey
         ]
@@ -39,9 +39,10 @@ class APIFetchHandler {
             switch response.result {
             case .success(let data):
                     let parsedData = self.parseExchangeDataJSON(data)
-                    print(parsedData)
+                    completion(parsedData)
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
+                completion(0.0)
             }
         }
     }
@@ -77,6 +78,7 @@ class APIFetchHandler {
         do {
             let decodedData = try JSONDecoder().decode(ExchangeData.self, from: data)
             let result = decodedData.amountTo
+            print(decodedData)
             return result
         } catch {
             print(error)
