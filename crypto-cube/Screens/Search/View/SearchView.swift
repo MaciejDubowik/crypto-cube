@@ -28,7 +28,7 @@ struct SearchView: View {
                             .font(Font.custom(S.Font.Lato.semiBold, size: 18))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 30)
-                        
+
                         SearchBarView(viewModel: searchBarViewModel)
                         
                         Spacer()
@@ -41,7 +41,6 @@ struct SearchView: View {
                     Spacer()
 
                     CryptoList(list: searchBarViewModel.searchResults)
-                    
                 }
                 
             }.ignoresSafeArea()

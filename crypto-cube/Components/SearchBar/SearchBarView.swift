@@ -16,6 +16,7 @@ struct SearchBarView: View {
                 .frame(width: 250, height: 36)
                 .background(.white)
                 .cornerRadius(30)
+                .padding(.leading, 13)
                 .overlay(
                     RoundedRectangle(cornerRadius: 30)
                         .inset(by: 0.5)
@@ -35,12 +36,13 @@ struct SearchBarView: View {
                             .resizable()
                             .frame(width: 10, height: 10)
                             .foregroundColor(.black)
+                            .autocorrectionDisabled()
                             .cornerRadius(30)
                     }
                 })
         }
         .padding(.top, 20)
-        .padding(.horizontal, 45)
+        .padding(.horizontal, 40)
     }
 }
 

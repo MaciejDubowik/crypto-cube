@@ -19,19 +19,30 @@ struct CryptoList: View {
                 .padding(.leading, 30)
                 .padding(.top, 30)
 
+
+
             Spacer()
 
-            List {
-                ForEach(list) { item in
-                    NavigationLink(destination: ExchangeView(name: item.name, ticker: item.ticker), label: {
-                        Text("\(item.name) | \(item.ticker) |  \(item.network)")
-                    })
+                List {
+                    ForEach(list) { item in
+                        NavigationLink(destination: ExchangeView(name: item.name, ticker: item.ticker), label: {
+                            VStack{
+                                Text("\(item.name)")
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .font(Font.custom(S.Font.Lato.semiBold, size: 20))
+                                Text("\(item.ticker)".uppercased())
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .font(Font.custom(S.Font.Lato.regular, size: 18))
+                                    .foregroundColor(Color(hex: S.Color.lightGray))
+                            }
 
+
+                        })
+
+                    }
                 }
-
-            }
-            .padding(.top, 10)
-
+                .padding(.top, 10)
+                .listStyle(.plain)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.white)
