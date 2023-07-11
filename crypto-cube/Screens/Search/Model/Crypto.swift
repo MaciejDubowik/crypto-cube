@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct CryptoData: Identifiable {
+struct CoreCrypto: Identifiable {
     let id = UUID()
     var name: String
-    var shortName: String
-    var price: Double
+    var ticker: String
+    var network: String
 }

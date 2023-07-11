@@ -1,0 +1,6 @@
+framework module Pods_crypto_cube_crypto_cubeUITests {
+  umbrella header "Pods-crypto-cube-crypto-cubeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
