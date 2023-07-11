@@ -12,7 +12,7 @@ class SearchBarViewModel: ObservableObject {
     @Published var searchResults: [CoreCrypto] = []
 
     func getCrypto(){
-        APIFetchHandler.sharedInstance.fetchAPIData(searchedResult: text) { result in
+        APIFetchHandler.sharedInstance.fetchCryptoData(searchedResult: text) { result in
             self.searchResults = result as? [CoreCrypto] ?? []
         }
     }

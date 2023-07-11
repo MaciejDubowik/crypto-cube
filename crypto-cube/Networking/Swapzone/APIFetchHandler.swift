@@ -11,7 +11,7 @@ import Alamofire
 class APIFetchHandler {
     static let sharedInstance = APIFetchHandler()
 
-    func fetchAPIData(searchedResult: String, completion: @escaping ([Any]) -> Void) {
+    func fetchCryptoData(searchedResult: String, completion: @escaping ([Any]) -> Void) {
         let url = "https://api.swapzone.io/v1/exchange/currencies"
         let headers: HTTPHeaders = [
             "x-api-key": Config.swapzoneAPIKey
@@ -20,8 +20,8 @@ class APIFetchHandler {
         AF.request(url, headers: headers).responseData { response in
             switch response.result {
             case .success(let data):
-                    let parsedData = self.parseCoreCryptoDataJSON(data, searchedResult)
-                    completion(parsedData)
+                let parsedData = self.parseCoreCryptoDataJSON(data, searchedResult)
+                completion(parsedData)
             case .failure(let error):
                 print(error.localizedDescription)
                 completion([])
@@ -38,8 +38,8 @@ class APIFetchHandler {
         AF.request(url, headers: headers).responseData { response in
             switch response.result {
             case .success(let data):
-                    let parsedData = self.parseExchangeDataJSON(data)
-                    completion(parsedData)
+                let parsedData = self.parseExchangeDataJSON(data)
+                completion(parsedData)
             case .failure(let error):
                 print(error.localizedDescription)
                 completion(0.0)
