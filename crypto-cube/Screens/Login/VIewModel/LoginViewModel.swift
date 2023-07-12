@@ -11,6 +11,7 @@ import Combine
 class LoginViewModel: ObservableObject {
     @Published var user = User()
     @Published var message = ""
+    @Published var isLoggedIn = false
 
     func login() {
         Auth.auth().signIn(withEmail: user.email, password: user.password) { (result, err) in
@@ -18,7 +19,9 @@ class LoginViewModel: ObservableObject {
                 self.message = "Incorrect email or password."
                 return
             } else {
-                print("success")
+                DispatchQueue.main.async {
+                    self.isLoggedIn = true
+                }
             }
         }
 

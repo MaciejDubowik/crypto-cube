@@ -55,6 +55,10 @@ struct LoginView: View {
                                     .cornerRadius(10)
                             })
 
+                            NavigationLink(destination: SearchView(), isActive: $loginViewModel.isLoggedIn) {
+                                EmptyView()
+                            }
+
                             HStack {
                                 Text("Don't have an account?")
                                     .font(Font.custom(S.Font.Lato.regular, size: 14))

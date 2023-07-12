@@ -44,7 +44,7 @@ struct SearchView: View {
                 }
                 
             }.ignoresSafeArea()
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
