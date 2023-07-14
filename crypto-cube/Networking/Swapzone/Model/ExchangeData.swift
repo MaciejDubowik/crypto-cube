@@ -15,6 +15,6 @@ struct ExchangeData: Codable {
     let amountFrom: Double
     let amountTo: Double
     let quotaId: String
-    let minAmount: Double
-    let maxAmount: Double
+    let minAmount: Double?
+    let maxAmount: Double?
 }

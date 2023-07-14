@@ -43,6 +43,7 @@
 		0E49EB6A2A5F2D5B008A6A43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0E49EB692A5F2D5B008A6A43 /* FirebaseAnalytics */; };
 		0E49EB6C2A5F2D95008A6A43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0E49EB6B2A5F2D95008A6A43 /* FirebaseAuth */; };
 		0E49EB702A5F334D008A6A43 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EB6F2A5F334D008A6A43 /* LoginViewModelTests.swift */; };
+		0E49EB732A616AEA008A6A43 /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EB722A616AEA008A6A43 /* ExchangeViewModel.swift */; };
 		0EE050452A4E188800FB80A6 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */; };
 		0EE050472A4F2C7800FB80A6 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE050462A4F2C7800FB80A6 /* Crypto.swift */; };
 		0EFDD6082A536C6F006CC31F /* APIFetchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */; };
@@ -106,6 +107,7 @@
 		0E49EB5B2A5D66D6008A6A43 /* CryptoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoList.swift; sourceTree = "<group>"; };
 		0E49EB602A5D73F7008A6A43 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
 		0E49EB6F2A5F334D008A6A43 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		0E49EB722A616AEA008A6A43 /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
 		0EE050442A4E188800FB80A6 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 		0EE050462A4F2C7800FB80A6 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		0EFDD6072A536C6F006CC31F /* APIFetchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetchHandler.swift; sourceTree = "<group>"; };
@@ -407,6 +409,14 @@
 			path = SearchBar;
 			sourceTree = "<group>";
 		};
+		0E49EB712A616ACC008A6A43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E49EB722A616AEA008A6A43 /* ExchangeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0EFDD60D2A54B4EE006CC31F /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				0EFDD6182A572A1F006CC31F /* View */,
+				0E49EB712A616ACC008A6A43 /* ViewModel */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -780,6 +791,7 @@
 				0E2F99C42A4C2E0200CFFE03 /* Strings+Generated.swift in Sources */,
 				0EE050472A4F2C7800FB80A6 /* Crypto.swift in Sources */,
 				0EFDD6162A5584F9006CC31F /* CoreCrpytoData.swift in Sources */,
+				0E49EB732A616AEA008A6A43 /* ExchangeViewModel.swift in Sources */,
 				0EFDD61C2A5B1BB1006CC31F /* ExchangeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

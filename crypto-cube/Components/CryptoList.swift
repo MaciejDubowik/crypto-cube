@@ -25,7 +25,7 @@ struct CryptoList: View {
 
                 List {
                     ForEach(list) { item in
-                        NavigationLink(destination: ExchangeView(name: item.name, ticker: item.ticker), label: {
+                        NavigationLink(destination: ExchangeView(exchangeViewModel: ExchangeViewModel(name: item.name, ticker: item.ticker)), label: {
                             VStack{
                                 Text("\(item.name)")
                                     .frame(maxWidth: .infinity, alignment: .leading)

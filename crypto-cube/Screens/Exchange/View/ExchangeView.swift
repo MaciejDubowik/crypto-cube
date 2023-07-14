@@ -8,23 +8,18 @@
 import SwiftUI
 
 struct ExchangeView: View {
-
-    let name: String
-    let ticker: String
-
-    @State var textBTC = "0.00"
-    @State var textResult = "0.00"
+    @ObservedObject var exchangeViewModel: ExchangeViewModel
 
     var body: some View {
         ZStack{
 
             VStack {
                 VStack {
-                    Text(name)
+                    Text(exchangeViewModel.name)
                         .foregroundColor(.black)
                         .font(Font.custom(S.Font.Lato.bold, size: 40))
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Text(ticker)
+                    Text(exchangeViewModel.ticker)
                         .foregroundColor(.black)
                         .font(Font.custom(S.Font.Lato.semiBold, size: 16))
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -34,18 +29,17 @@ struct ExchangeView: View {
                 .padding(.bottom, 50)
 
 
-                DefaultTextField(placeholder: "from BTC", text: $textBTC)
-                DefaultTextField(placeholder: "to \(ticker)", text: $textResult)
+                DefaultTextField(placeholder: "from BTC", text: $exchangeViewModel.textBTC)
+                DefaultTextField(placeholder: "to \(exchangeViewModel.ticker)", text: $exchangeViewModel.textResult)
 
                 Spacer()
 
                 Button(action: {
                     print("calculate")
-                    print(textResult)
-                    APIFetchHandler.sharedInstance.fetchExchangeData(toTicker: ticker, amount: Double(textBTC)!, completion: { result in
-                        textResult = "\(result)"
-                    })
-                    print(textResult)
+                    print(exchangeViewModel.name)
+                    print(exchangeViewModel.ticker)
+                    print(exchangeViewModel.textResult)
+                    exchangeViewModel.getRate()
                 }, label: {
                     Text("Calculate")
                         .font(Font.custom(S.Font.Lato.semiBold, size: 19))
@@ -66,6 +60,7 @@ struct ExchangeView: View {
 
 struct ExchangeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExchangeView(name: "", ticker: "")
+        var viewModel = ExchangeViewModel(name: "Name", ticker: "Ticker")
+        ExchangeView(exchangeViewModel: viewModel)
     }
 }
