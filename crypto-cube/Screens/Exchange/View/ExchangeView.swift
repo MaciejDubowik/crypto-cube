@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExchangeView: View {
     @ObservedObject var exchangeViewModel: ExchangeViewModel
+    @FocusState private var keyboardFocused: Bool
 
     var body: some View {
         ZStack{
@@ -30,6 +31,13 @@ struct ExchangeView: View {
 
 
                 DefaultTextField(placeholder: "from BTC", text: $exchangeViewModel.textBTC)
+                    .keyboardType(.decimalPad)
+                    .focused($keyboardFocused)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                            keyboardFocused = true
+                        }}
+                    
                 DefaultTextField(placeholder: "to \(exchangeViewModel.ticker)", text: $exchangeViewModel.textResult)
 
                 Spacer()
