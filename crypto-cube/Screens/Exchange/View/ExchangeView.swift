@@ -49,11 +49,11 @@ struct ExchangeView: View {
                     print(exchangeViewModel.textResult)
                     exchangeViewModel.getRate()
                 }, label: {
-                    Text("Calculate")
+                    Text(exchangeViewModel.status.rawValue)
                         .font(Font.custom(S.Font.Lato.semiBold, size: 19))
                         .foregroundColor(.black)
                         .frame(width: 342, height: 51)
-                        .background(Color(hex: S.Color.orange))
+                        .background(exchangeViewModel.status == .FETCHING ? Color(hex: S.Color.lightGray) : Color(hex: S.Color.orange))
                         .cornerRadius(10)
                 }).padding(.bottom, 80)
 

@@ -8,6 +8,13 @@
 import Foundation
 import Combine
 
+enum Status: String {
+    case NOT_STARTED = "Calculate"
+    case FETCHING = "Wait"
+    case COMPLETED = "Done"
+    case ERROR = "Can not calculate this cryptocurrency"
+}
+
 class ExchangeViewModel: ObservableObject {
     let name: String
     let ticker: String
@@ -17,14 +24,17 @@ class ExchangeViewModel: ObservableObject {
         self.ticker = ticker
     }
 
-    @Published var textBTC = "0.00"
-    @Published var textResult = "0.00"
+    @Published var textBTC = ""
+    @Published var textResult = ""
+    @Published var status = Status.NOT_STARTED
 
 
     func getRate() {
+        status = Status.FETCHING
         APIFetchHandler.sharedInstance.fetchExchangeData(toTicker: ticker, amount: Double(textBTC)!, completion: { result in
             self.textResult = "\(result)"
             print(self.textResult)
+            self.status = Status.COMPLETED
         })
     }
     
